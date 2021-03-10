@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.shuffle-sort-header h1{
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    background-color: white;
+}
+
+.shuffler-container{
+    display: flex;
+    width: 65vw;
+    height: 70vh;
+    margin: auto;
+    background-color: #EFEFEF;
+    border-top: 4px solid #BFBFBF;
+}
+
+.number-cards-container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33% );
+    grid-template-rows: repeat(3, 33.33% );
+}
+
+.number-cards-container div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-cards-container div div {
+    color: white;
+    font-size: 50px;
+}
+
+.buttons-container{
+    width: 30%;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button{
+    width: 60%;
+    padding: 12px;
+    margin: 10px;
+    background-color: #72C3DC;
+    box-shadow: 0px 3px 3px 1px #2B8EAD;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+	color:#fff;
+}
+
+.card1, .card8{
+    background-color: #7098A8;
+}
+
+.card2, .card4{
+    background-color: #2C8EAE;
+}
+
+.card3, .card5, .card9{
+    background-color: #30454E;
+}
+
+.card6, .card7{
+    background-color: #BFBFBF;
+}
+
+@media all and (max-width: 375px){
+    .shuffler-container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 78vh;
+        width: 100vw;
+        background-color: white;
+        justify-content: flex-end;
+        align-items: center;
+        border-top: none;
+    }
+
+    .number-cards-container{
+        width: 90%;
+        grid-template-columns: repeat(1, 99%);
+        grid-template-rows: repeat(9, 11.11% );
+        grid-row-gap: 10px;
+    }
+
+    .buttons-container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    .button {
+        width: 35%;
+    }
+
+    .shuffle-sort-header h1 {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #333333;
+        color: white;
+    }
+
+    footer p {
+        margin-top: 0;
+    }
+
+    .number-cards-container div div {
+        color: black;
+        font-size: 20px;
+    }
+
+    .card1, .card8{
+        background-color: #EFEFEF;
+        border-left:4px solid #7098A8;
+    }
+
+    .card2, .card4{
+        background-color: #EFEFEF;
+        border-left:4px solid #2C8EAE;
+    }
+
+    .card3, .card5, .card9{
+        background-color: #EFEFEF;
+        border-left:4px solid #30454E;
+    }
+
+    .card6, .card7{
+        background-color: #EFEFEF;
+        border-left:4px solid #BFBFBF;
+    }
+}
